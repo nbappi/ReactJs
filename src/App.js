@@ -5,9 +5,16 @@ function Hello(props){
     )
 }
 
+function HelloWithOption(props){
+   return (
+     <p>Hello {props.name} and Country is {props.options.country}</p>
+   )
+
+}
+
 function App(){
 
-  const elem1 = <Hello name="Nuruzzaman" />
+  const elem1 = <HelloWithOption name="Nuruzzaman" options={{ country:"bangladesh", city: "tangail"}}/>
 
     return (
       <div>
